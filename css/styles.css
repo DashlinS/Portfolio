@@ -10982,15 +10982,13 @@ section.resume-section .resume-section-content {
 
 #projects .projects_content {
   border-top: 1px solid var(--bs-gray-500);
-  /* border-bottom: 1px solid var(--bs-gray-500); */
-  /* border-radius: .4em; */
-  /* height: 550px; */
   width: calc(33.33333% - 1em);
   flex-shrink: 1;
   margin: 1em 0em 1em 0em;
   padding: 10px;
-  position: relative;
 }
+
+/* project images */
 
 #projects .projects_content img {
   width: 100%;
@@ -11030,7 +11028,6 @@ section.resume-section .resume-section-content {
 #project_link {
   display: flex;
   justify-content: flex-start;
-  /* justify-content: space-; */
   padding: 0px;
 }
 
@@ -11041,9 +11038,7 @@ section.resume-section .resume-section-content {
   color: black;
   text-decoration: none;
   list-style-type: none;
-  /* width: 100px; */
   text-align: center;
-  /* border: 1px solid black; */
   padding: 8px;
   margin-right: 10px;
 }
@@ -11062,7 +11057,7 @@ section.resume-section .resume-section-content {
 
   #page-top {
       /* background-color: black; */
-    }
+  }
   #projects {
     flex-direction: column;
     align-items: center;
@@ -11085,4 +11080,13 @@ section.resume-section .resume-section-content {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px //    */
+  #projects .projects_content {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1300px){
+  #projects .projects_content {
+      flex-basis: 50%;
+  }
 }
