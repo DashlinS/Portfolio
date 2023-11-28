@@ -10868,6 +10868,10 @@ p.lead {
   font-size: 1.5rem;
 }
 
+.subheadingColor {
+  color: var(--bs-info);
+}
+
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -11089,4 +11093,16 @@ section.resume-section .resume-section-content {
   #projects .projects_content {
       flex-basis: 50%;
   }
+}
+
+.dark-mode {
+  background-color: #000;
+  color: white;
+}
+
+.btn-toggle {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
 }

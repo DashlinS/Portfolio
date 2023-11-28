@@ -7,6 +7,24 @@
 // Scripts
 //
 
+//Night Mode
+document.querySelector('.btn-toggle').addEventListener('click', () => {
+  const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  if (!document.body.className.includes('dark-mode')) {
+    document.body.classList.toggle('dark-mode');
+    headings.forEach((heading) => {
+      heading.style.color = 'white';
+    });
+  } else {
+    document.body.classList.remove('dark-mode');
+    headings.forEach((heading) => {
+      heading.style.color = '#343a40';
+    });
+  }
+});
+
+//Save to Nightmode preference to localStorage
+
 window.addEventListener('DOMContentLoaded', (event) => {
   // Activate Bootstrap scrollspy on the main nav element
   const sideNav = document.body.querySelector('#sideNav');
